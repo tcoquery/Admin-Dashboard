@@ -36,8 +36,15 @@ body {
     background-color: black;
 }
 
-.name {
+P {
     font-size: 1.2rem;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .sideboard, .sideboard-links, .sideboard-bottom-links {
