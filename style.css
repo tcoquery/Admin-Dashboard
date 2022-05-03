@@ -1,27 +1,30 @@
-body {
+html, body {
     height: 100vh;
+    width: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .container {
-    height: 100vh;
     display: grid;
-    grid-template-columns: 0.15fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 220px 1fr;
 }
 
 .header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 1fr;
+    height: fit-content;
 }
 
 .header-first-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
 }
 
 
@@ -33,7 +36,7 @@ body {
 .first-row-column-two {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width:250px;
 }
 
@@ -42,7 +45,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .second-row-column-one {
@@ -55,7 +58,7 @@ body {
 .second-row-column-two {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width:450px;
 }
 
@@ -153,28 +156,52 @@ a {
 .main-content {
     display: flex;
     background-color: #3DADDB;
+    width: 100%;
 }
 
 .main-sidebar {
+    margin-bottom: 20px;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 18px;
 }
 
 .box {
     border-radius: 16px;
-    flex-grow: 1;
     width: 600px;
     background-color: white;
+    padding: 25px;
+}
+
+#announcement-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: fit-content;
+    width: 400px;
+}
+
+#announcement-text {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#trending-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: fit-content;
 }
 
 .projects {
     display: grid;
-    height: 1100px;
+    height: fit-content;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 40px;
+    padding-bottom: 20px;
 }
 
 #main {
@@ -191,10 +218,6 @@ a {
     flex-direction: column;
     padding: 25px;
     height: fit-content;
-}
-
-.project-text {
-
 }
 
 .project-icons {
